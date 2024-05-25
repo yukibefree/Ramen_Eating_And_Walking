@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="activity_area_item">
+        <item>東北</item>
+        <item>南関東</item>
+        <item>北関東・甲信</item>
+        <item>北陸</item>
+        <item>東海</item>
+        <item>近畿</item>
+        <item>中国</item>
+        <item>四国</item>
+        <item>九州</item>
+    </string-array>
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="likes_item">
+        <item>豚骨</item>
+        <item>醤油</item>
+        <item>味噌</item>
+        <item>塩</item>
+        <item>横濱家系</item>
+        <item>二郎系</item>
+        <item>中華そば</item>
+        <item>つけ麺</item>
+        <item>坦々麺</item>
+        <item>魚介</item>
+        <item>台湾まぜそば</item>
+        <item>油そば</item>
+    </string-array>
+</resources>

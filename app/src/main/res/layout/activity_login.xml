@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activity_login"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/imageView"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/soy_sauce_ramen_with_chopsticks"
+        android:contentDescription="@string/login_contents_description"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/appNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_japanese_name"
+        android:textSize="28sp"
+        android:textColor="@color/black"
+        android:background="@drawable/shape_rounded_corner"
+        android:paddingTop="5sp"
+        android:paddingBottom="5sp"
+        android:paddingStart="30sp"
+        android:paddingEnd="30sp"
+        android:alpha="0.5"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"/>
+
+    <LinearLayout
+        android:id="@+id/contentsLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/emailText"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/shape_rounded_corner"
+            android:padding="5dp"
+            android:autofillHints="@string/login_email_hint"
+            android:hint="@string/login_email_hint"
+            android:inputType="textEmailAddress"
+            tools:ignore="VisualLintTextFieldSize" />
+
+
+        <EditText
+            android:id="@+id/passwordText"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/shape_rounded_corner"
+            android:padding="5dp"
+            android:layout_marginTop="4dp"
+            android:autofillHints="@string/login_pass_hint"
+            android:hint="@string/login_pass_hint"
+            android:inputType="textPassword"
+            tools:ignore="VisualLintTextFieldSize" />
+
+
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="4dp"
+            android:text="@string/login_title"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/lightBlue"
+            android:alpha="0.9"
+            tools:ignore="TextContrastCheck,VisualLintButtonSize" />
+
+        <Button
+            android:id="@+id/createAccountButton"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginTop="4dp"
+            android:layout_gravity="end"
+            android:text="@string/create_account_button_text_underline"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:backgroundTint="@color/transparent"
+            tools:ignore="TextContrastCheck,VisualLintButtonSize" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

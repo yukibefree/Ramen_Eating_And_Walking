@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">Ramen_Eating_And_Walking</string>
+    <string name="app_japanese_name">ラーメン食べ歩き</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_post">投稿</string>
+
+    <!-- ナビゲーション用文字列 -->
+    <string name="bottom_navigation_home">ホーム</string>
+    <string name="bottom_navigation_search">探す</string>
+    <string name="bottom_navigation_myPage">マイページ</string>
+
+
+    <!-- ログイン画面用文字列 -->
+    <string name="login_email_hint">メールアドレス</string>
+    <string name="login_pass_hint">パスワード（6文字以上）</string>
+    <string name="login_contents_description">ラーメン</string>
+    <string name="login_title">ログイン</string>
+
+    <!-- ログイン画面エラーメッセージ用文字列 -->
+    <string name="login_failure_message">ログインに失敗しました</string>
+    <string name="login_error_message">正しく入力してください</string>
+    <string name="email_error_message">メールアドレスを正しく入力してください</string>
+    <string name="password_error_message">パスワードは6文字以上です</string>
+    <string name="email_or_password_error_message">メールアドレス、またはパスワードが一致しません</string>
+
+
+    <!-- アカウント作成画面用文字列 -->
+    <string name="create_account_button_text">アカウント作成</string>
+    <string name="create_account_title">アカウント作成</string>
+    <string name="create_account_button_text_underline"><u><b>アカウント作成</b></u></string>
+    <string name="create_account_icon_text">アイコン</string>
+    <string name="create_account_username_hint">ユーザー名</string>
+    <string name="create_account_email_hint">メールアドレス</string>
+    <string name="create_account_password_hint">パスワード</string>
+    <string name="create_account_password_verification_hint">確認用パスワード</string>
+    <string name="create_account_origin_hint">出身(オプション)</string>
+    <string name="create_account_activity_area_hint">活動地域(オプション)</string>
+    <string name="create_account_likes_hint">好み(オプション)</string>
+    <string name="create_account_introduction_hint">自己紹介(オプション)</string>
+    <string name="create_account_example_introduction">私は濃厚こってり豚骨ラーメンが好きです。</string>
+
+    <!-- アカウント作成エラーメッセージ用文字列 -->
+    <string name="user_name_error_message">ユーザー名を正しく入力してください</string>
+    <string name="password_no_match_error_message">パスワードが一致しません</string>
+    <string name="create_account_failure_message">アカウント作成に失敗しました</string>
+    <string name="create_account_error_message">正しく入力してください</string>
+    <string name="failed_to_save_to_firebase">Firebaseへの保存が失敗しました</string>
+
+    <!-- プロフィール表示用文字列 -->
+    <string name="account_origin_no_data">出身(未設定)</string>
+    <string name="account_activity_area_no_data">活動地域(未設定)</string>
+    <string name="account_likes_no_data">好み(未設定)</string>
+    <string name="account_introduction_no_data">自己紹介(未設定)</string>
+
+    <!-- 設定画面用文字列 -->
+    <string name="menu_home">ホーム</string>
+    <string name="menu_search">探す</string>
+    <string name="menu_myPage">マイページ</string>
+    <string name="menu_logout_label">ログアウト</string>
+</resources>
