@@ -35,7 +35,9 @@ class LoginActivity : AppCompatActivity() {
         // FirebaseAuthのオブジェクトを取得する
         auth = FirebaseAuth.getInstance()
 
-        // ログイン処理のリスナー
+        /**
+         * ログイン処理のリスナー
+         */
         loginListener = OnCompleteListener { task ->
             if (task.isSuccessful) { // 成功した場合
                 // Preferenceにユーザー名を保存する
@@ -53,7 +55,10 @@ class LoginActivity : AppCompatActivity() {
                 binding.progressBar.visibility = View.GONE
                 // Activityを閉じる
                 finish()
-
+                // ダイアログを表示する
+                val view = findViewById<View>(android.R.id.content)
+                Snackbar.make(view, getString(R.string.success_login), Snackbar.LENGTH_LONG)
+                    .show()
             } else { // 失敗した場合
                 // エラーダイアログを表示する
                 val view = findViewById<View>(android.R.id.content)
@@ -85,7 +90,9 @@ class LoginActivity : AppCompatActivity() {
         }
     }
 
-    // ログイン情報の入力判定
+    /**
+     * ログイン情報の入力判定
+     */
     private fun judgeLoginInput(email: String, password: String, view: View) {
         // メールアドレスに入力あり、且つパスワードが6文字以上ならログイン処理を行う
         if (email.isNotEmpty() && password.length >= 6) {
@@ -108,7 +115,9 @@ class LoginActivity : AppCompatActivity() {
         }
     }
 
-    // ログイン処理
+    /**
+     * ログイン処理
+     */
     private fun login (email: String, password: String) {
         // プログレスバーを表示する
         binding.progressBar.visibility = View.VISIBLE
@@ -117,7 +126,9 @@ class LoginActivity : AppCompatActivity() {
         auth.signInWithEmailAndPassword(email, password).addOnCompleteListener(loginListener)
     }
 
-    // Preferenceにユーザー名を保存する
+    /**
+     * Preferenceにユーザー名を保存する
+     */
     private fun saveName(name: String) {
         val sp = PreferenceManager.getDefaultSharedPreferences(this)
         val editor = sp.edit()

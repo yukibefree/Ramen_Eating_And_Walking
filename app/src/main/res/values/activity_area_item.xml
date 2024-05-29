@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="activity_area_item">
+        <item>未選択</item>
         <item>東北</item>
         <item>南関東</item>
         <item>北関東・甲信</item>

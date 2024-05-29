@@ -15,6 +15,7 @@
     <string name="login_pass_hint">パスワード（6文字以上）</string>
     <string name="login_contents_description">ラーメン</string>
     <string name="login_title">ログイン</string>
+    <string name="success_login">ログインに成功しました</string>
 
     <!-- ログイン画面エラーメッセージ用文字列 -->
     <string name="login_failure_message">ログインに失敗しました</string>
@@ -38,6 +39,8 @@
     <string name="create_account_likes_hint">好み(オプション)</string>
     <string name="create_account_introduction_hint">自己紹介(オプション)</string>
     <string name="create_account_example_introduction">私は濃厚こってり豚骨ラーメンが好きです。</string>
+    <string name="success_create_account">アカウントの作成に成功しました</string>
+    <string name="get_image">画像を取得</string>
 
     <!-- アカウント作成エラーメッセージ用文字列 -->
     <string name="user_name_error_message">ユーザー名を正しく入力してください</string>
@@ -47,14 +50,23 @@
     <string name="failed_to_save_to_firebase">Firebaseへの保存が失敗しました</string>
 
     <!-- プロフィール表示用文字列 -->
-    <string name="account_origin_no_data">出身(未設定)</string>
-    <string name="account_activity_area_no_data">活動地域(未設定)</string>
-    <string name="account_likes_no_data">好み(未設定)</string>
-    <string name="account_introduction_no_data">自己紹介(未設定)</string>
+    <string name="account_userName_no_data">ユーザー名</string>
+    <string name="account_email_no_data">メールアドレス</string>
+    <string name="account_origin_no_data">出身 : (未設定)</string>
+    <string name="account_activity_area_no_data">活動地域 : (未設定)</string>
+    <string name="account_likes_no_data">好み : (未設定)</string>
+    <string name="account_introduction_no_data">自己紹介 : (未設定)</string>
 
     <!-- 設定画面用文字列 -->
     <string name="menu_home">ホーム</string>
     <string name="menu_search">探す</string>
     <string name="menu_myPage">マイページ</string>
     <string name="menu_logout_label">ログアウト</string>
+
+    <!-- マイページ用文字列 -->
+    <string name="myPage_origin">出身 : </string>
+    <string name="myPage_activity_area">活動地域 : </string>
+    <string name="myPage_likes">好み : </string>
+    <string name="myPage_introduction">自己紹介 : \n</string>
+
 </resources>

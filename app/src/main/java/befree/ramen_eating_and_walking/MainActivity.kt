@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import befree.ramen_eating_and_walking.databinding.ActivityMainBinding
 import com.google.android.material.navigation.NavigationBarView
@@ -13,6 +14,7 @@ import com.google.firebase.auth.FirebaseAuth
 class MainActivity : AppCompatActivity () {
 
     private lateinit var binding: ActivityMainBinding
+    // 位置情報を取得するためのプロパティ宣言
 
     // Bottom Navigationが選択された時の設定
     private val onItemSelectedListener = NavigationBarView.OnItemSelectedListener { item ->
@@ -22,6 +24,7 @@ class MainActivity : AppCompatActivity () {
                 supportFragmentManager.beginTransaction()
                     .replace(R.id.frameLayout, HomeFragment())
                     .commit()
+                binding.fab.visibility = View.VISIBLE
                 return@OnItemSelectedListener true
             }
             R.id.navigation_map -> {
@@ -29,6 +32,7 @@ class MainActivity : AppCompatActivity () {
                 supportFragmentManager.beginTransaction()
                     .replace(R.id.frameLayout, MapFragment())
                     .commit()
+                binding.fab.visibility = View.INVISIBLE
                 return@OnItemSelectedListener true
             }
             R.id.navigation_myPage -> {
@@ -36,6 +40,7 @@ class MainActivity : AppCompatActivity () {
                 supportFragmentManager.beginTransaction()
                     .replace(R.id.frameLayout, MyPageFragment())
                     .commit()
+                binding.fab.visibility = View.VISIBLE
                 return@OnItemSelectedListener true
             }
         }
@@ -44,6 +49,8 @@ class MainActivity : AppCompatActivity () {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
@@ -58,8 +65,6 @@ class MainActivity : AppCompatActivity () {
         supportFragmentManager.beginTransaction()
             .replace(R.id.frameLayout, HomeFragment())
             .commit()
-
-        // タイトルの設定
         title = getString (R.string.menu_home)
 
     }
@@ -67,6 +72,14 @@ class MainActivity : AppCompatActivity () {
     override fun onResume() {
         super.onResume()
 
+        // ログイン済みのユーザーを取得する
+        val user = FirebaseAuth.getInstance().currentUser
+        if (user != null) { // ログイン済みの場合の処理
+            binding.toolbar.visibility = View.VISIBLE
+        }
+        else { // 未ログインの場合の処理
+            binding.toolbar.visibility = View.INVISIBLE
+        }
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {

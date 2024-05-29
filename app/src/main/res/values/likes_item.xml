@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="likes_item">
+        <item>未選択</item>
         <item>豚骨</item>
         <item>醤油</item>
         <item>味噌</item>

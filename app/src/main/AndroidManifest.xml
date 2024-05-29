@@ -2,7 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
 
     <application
         android:allowBackup="true"
@@ -13,6 +16,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Ramen_Eating_And_Walking"
         tools:targetApi="31">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDe4XZyjrMhxqCovv3r5r_sCD5-M-TBopk" />
         <activity
             android:name=".CreateAccountActivity"
             android:exported="false" />

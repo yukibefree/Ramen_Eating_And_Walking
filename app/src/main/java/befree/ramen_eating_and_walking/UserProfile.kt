@@ -1,5 +1,6 @@
 package befree.ramen_eating_and_walking
 
+import android.provider.Settings.Secure.getString
 import java.util.*
 
 class UserProfile {
@@ -8,9 +9,10 @@ class UserProfile {
     var uid = ""
     var userName = ""
     var email = ""
-    var origin = ""
-    var activityArea = ""
-    var likes = ""
-    var introduction = ""
+    var origin = "(未設定)"
+    var activityArea = "(未設定)"
+    var likes = "(未設定)"
+    var introduction = "(未設定)"
+    var image = ""
 
 }
