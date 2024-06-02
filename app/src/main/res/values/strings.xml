@@ -77,4 +77,10 @@
     <!-- マップ用文字列 -->
     <string name="move_my_location">現在地へ移動しました</string>
     <string name="my_location">現在地 : </string>
+
+    <!-- API通信関連 -->
+    <string name="base_url">https://webservice.recruit.co.jp/hotpepper/gourmet/v1/</string>
+    <string name="api_key">8648f8376c21c145</string>
+    <string name="api_keyword">ラーメン</string>
+
 </resources>

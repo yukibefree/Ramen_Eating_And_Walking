@@ -18,6 +18,7 @@ import com.google.android.material.navigation.NavigationBarView
 import com.google.firebase.auth.FirebaseAuth
 import befree.ramen_eating_and_walking.PermissionUtils.PermissionDeniedDialog.Companion.newInstance
 import befree.ramen_eating_and_walking.PermissionUtils.isPermissionGranted
+import com.google.android.gms.location.LocationServices
 import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment
@@ -222,5 +223,7 @@ class MainActivity : AppCompatActivity (),
          */
         const val LOCATION_PERMISSION_REQUEST_CODE = 300
     }
+
+
 
 }
