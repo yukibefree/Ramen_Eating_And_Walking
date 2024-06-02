@@ -69,4 +69,12 @@
     <string name="myPage_likes">好み : </string>
     <string name="myPage_introduction">自己紹介 : \n</string>
 
+    <!-- PermissionUtils用文字列 -->
+    <string name="location_permission_denied">このアプリでは、位置情報レイヤーを有効にするため、位置情報の利用権限が必要です。位置情報を使用するには、もう一度アクセス許可を試してください。</string>
+    <string name="permission_required_toast">このアプリには場所の許可が必要です</string>
+    <string name="permission_rationale_location">現在地を地図上に表示する「現在地」機能を使用するには、位置情報サービスへのアクセスが必要です。</string>
+
+    <!-- マップ用文字列 -->
+    <string name="move_my_location">現在地へ移動しました</string>
+    <string name="my_location">現在地 : </string>
 </resources>
